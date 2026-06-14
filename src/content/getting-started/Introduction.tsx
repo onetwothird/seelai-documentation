@@ -126,21 +126,21 @@ export default function Introduction() {
               {/* Large Center Play Button */}
               <button 
                 onClick={() => setIsPlaying(true)}
-                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-[#8B5CF6] text-white flex items-center justify-center shadow-[0_8px_30px_rgb(139,92,246,0.3)] transition-all duration-300 hover:scale-110 hover:bg-[#7c4dff] z-10 focus:outline-none focus:ring-4 focus:ring-[#8B5CF6]/50"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 sm:w-20 sm:h-20 rounded-full bg-[#8B5CF6] text-white flex items-center justify-center shadow-[0_8px_30px_rgb(139,92,246,0.3)] transition-all duration-300 hover:scale-110 hover:bg-[#7c4dff] z-10 focus:outline-none focus:ring-4 focus:ring-[#8B5CF6]/50"
                 aria-label="Play Video"
               >
-                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z" />
                 </svg>
               </button>
 
               {/* Bottom Left Pill: Status Indicator (Glassmorphism) */}
-              <div className="absolute bottom-5 left-5 flex items-center gap-2.5 bg-[#1e1b4b]/60 backdrop-blur-md border border-white/10 text-white text-sm font-medium px-4 py-2.5 rounded-full shadow-lg pointer-events-none z-10">
-                <span className="relative flex h-2.5 w-2.5">
+              <div className="absolute bottom-16 left-3 sm:bottom-5 sm:left-5 flex items-center gap-2 sm:gap-2.5 bg-[#1e1b4b]/60 backdrop-blur-md border border-white/10 text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-lg pointer-events-none z-10">
+                <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-emerald-500"></span>
                 </span>
-                <span className="tracking-wide">Click to Play Inline</span>
+                <span className="tracking-wide whitespace-nowrap">Click to Play Inline</span>
               </div>
 
               {/* Bottom Right Pill: YouTube Link (Glassmorphism) */}
@@ -148,10 +148,10 @@ export default function Introduction() {
                 href="https://youtu.be/wsJBIeHQZdc?si=pOHxYymRt_WU5Nez" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="absolute bottom-5 right-5 flex items-center gap-2 bg-[#1e1b4b]/60 hover:bg-[#1e1b4b]/80 backdrop-blur-md border border-white/10 text-white text-sm font-medium px-4 py-2.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 z-10"
+                className="absolute bottom-3 left-3 sm:bottom-5 sm:left-auto sm:right-5 flex items-center gap-2 bg-[#1e1b4b]/60 hover:bg-[#1e1b4b]/80 backdrop-blur-md border border-white/10 text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 z-10"
               >
-                <span className="tracking-wide">Watch on YouTube</span>
-                <svg className="w-5 h-5 text-white/90" fill="currentColor" viewBox="0 0 24 24">
+                <span className="tracking-wide whitespace-nowrap">Watch on YouTube</span>
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white/90 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
                 </svg>
               </a>
