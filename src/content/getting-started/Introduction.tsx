@@ -135,7 +135,7 @@ export default function Introduction() {
               </button>
 
               {/* Bottom Left Pill: Status Indicator (Glassmorphism) */}
-              <div className="absolute bottom-16 left-3 sm:bottom-5 sm:left-5 flex items-center gap-2 sm:gap-2.5 bg-[#1e1b4b]/60 backdrop-blur-md border border-white/10 text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-lg pointer-events-none z-10">
+              <div className="absolute bottom-3 left-3 sm:bottom-5 sm:left-5 flex items-center gap-1.5 sm:gap-2.5 bg-[#1e1b4b]/60 backdrop-blur-md border border-white/10 text-white text-[11px] sm:text-sm font-medium px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-lg pointer-events-none z-10">
                 <span className="relative flex h-2 w-2 sm:h-2.5 sm:w-2.5 shrink-0">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 sm:h-2.5 sm:w-2.5 bg-emerald-500"></span>
@@ -148,10 +148,10 @@ export default function Introduction() {
                 href="https://youtu.be/wsJBIeHQZdc?si=pOHxYymRt_WU5Nez" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="absolute bottom-3 left-3 sm:bottom-5 sm:left-auto sm:right-5 flex items-center gap-2 bg-[#1e1b4b]/60 hover:bg-[#1e1b4b]/80 backdrop-blur-md border border-white/10 text-white text-xs sm:text-sm font-medium px-3 sm:px-4 py-2 sm:py-2.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 z-10"
+                className="absolute bottom-3 right-3 sm:bottom-5 sm:right-5 flex items-center gap-1.5 sm:gap-2 bg-[#1e1b4b]/60 hover:bg-[#1e1b4b]/80 backdrop-blur-md border border-white/10 text-white text-[11px] sm:text-sm font-medium px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-full shadow-lg transition-all duration-300 hover:scale-105 z-10"
               >
                 <span className="tracking-wide whitespace-nowrap">Watch on YouTube</span>
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 text-white/90 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-white/90 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
                 </svg>
               </a>
