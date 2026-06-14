@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { SidebarProvider } from './assets/context/SidebarContext';
 
 // Layout & UI
 import Layout from './assets/components/layout/Layout';
@@ -86,7 +87,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
+      <SidebarProvider>
+        <Routes>
         {/* Getting Started */}
         <Route path="/" element={<Layout toc={introToc}><Introduction /></Layout>} />
         <Route path="/installation" element={<Layout toc={installationToc}><Installation /></Layout>} />
@@ -107,6 +109,7 @@ function App() {
         <Route path="/technical/firebase" element={<Layout toc={firebaseToc}><FirebaseIntegration /></Layout>} />
         <Route path="/technical/yolov8" element={<Layout toc={yolov8Toc}><Yolov8ModelTraining /></Layout>} />
       </Routes>
+      </SidebarProvider>
     </BrowserRouter>
   );
 }
