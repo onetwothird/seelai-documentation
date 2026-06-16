@@ -13,7 +13,6 @@ export default function RealtimeLocation() {
           SEELAI provides highly accurate, real-time location monitoring to ensure the safety of partially sighted users. Both assigned Caretakers and MSWD Admins can track users on a live map, calculate exact distances, and review historical movement data.
         </p>
 
-        {/* Badges */}
         <div className="flex flex-wrap gap-2 pt-2">
           <span className="px-2.5 py-1 text-xs font-medium text-seelai-600 bg-seelai-50 border border-seelai-100 rounded-md">Firebase Realtime DB</span>
           <span className="px-2.5 py-1 text-xs font-medium text-seelai-600 bg-seelai-50 border border-seelai-100 rounded-md">Haversine Formula</span>
@@ -21,7 +20,6 @@ export default function RealtimeLocation() {
         </div>
       </section>
 
-      {/* Accuracy & Validation */}
       <section id="validation" className="space-y-4 mt-8">
         <h2 className="text-2xl font-bold text-slate-900 scroll-mt-24">Data Accuracy & Validation</h2>
         <p className="text-slate-600 leading-relaxed mb-4">
