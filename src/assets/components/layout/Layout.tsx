@@ -29,7 +29,7 @@ export default function Layout({ children, toc }: LayoutProps) {
 
             {/* Right Table of Contents */}
             {toc && (
-              <div className="hidden xl:block xl:w-64 xl:shrink-0">
+              <div className="hidden xl:block xl:w-64 xl:shrink-0 xl:-mt-16 relative z-10">
                 <RightTOC items={toc} />
               </div>
             )}
